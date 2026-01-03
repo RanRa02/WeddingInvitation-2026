@@ -1,15 +1,6 @@
 {
-  "version": 2,
+  "version": 3,
   "builds": [
-    {
-      "src": "public/index.php",
-      "use": "@vercel/php"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/public/index.php"
-    }
+    { "src": "Dockerfile", "use": "@vercel/docker" }
   ]
 }
