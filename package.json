@@ -1,13 +1,68 @@
+// Source - https://stackoverflow.com/q
+// Posted by Niels Bosman, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-01-04, License - CC BY-SA 4.0
+
 {
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build"
+  "name": "vue-toggle-component",
+  "version": "0.1.0",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
     },
-    "devDependencies": {
-        "axios": "^1.6.4",
-        "laravel-vite-plugin": "^1.0.0",
-        "vite": "^5.0.0"
-    }
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "description": "## Project setup ``` yarn install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nehlis/vue-toggle-component.git"
+  },
+  "keywords": [
+    "Vue.js",
+    "Toggle",
+    "component",
+    "Lightweight",
+    "Checkbox"
+  ],
+  "author": "Niels Bosman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nehlis/vue-toggle-component/issues"
+  },
+  "homepage": "https://github.com/nehlis/vue-toggle-component#readme"
 }
+
